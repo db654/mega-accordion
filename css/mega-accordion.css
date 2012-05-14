@@ -1,0 +1,77 @@
+#accordion {
+  list-style-type: none;
+  margin: 120px 30px 30px;
+}
+#accordion li {
+  clear: left;
+  float: left;
+  margin-bottom: 3px;
+}
+#accordion a {
+  background-color: #333;
+  color: #fff;
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  width: 240px;
+}
+#accordion a:hover {
+  background-color: #222;
+}
+#accordion div {
+  background-color: #333;
+  color: #ffe0c7;
+  font-size: 13px;
+  margin: 2px 0 6px 20px;
+  overflow: hidden;
+  padding: 10px 20px 20px;
+  position: relative;
+  width: 800px;
+}
+
+/* Cancel out styles for non-children */
+#accordion div li {
+  clear: none;
+  float: none;
+  margin-bottom: 3px;
+}
+#accordion div div {
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: auto;
+}
+#accordion div a {
+  background-color: transparent;
+  display: inline;
+  padding: 0;
+  width: auto;
+}
+#accordion div a:hover {
+  background-color: transparent;
+  text-decoration: underline;
+}
+/**/
+
+#accordion div ul {
+  list-style-position: inside;
+  margin-left: 10px;
+}
+#accordion div .section {
+  float: left;
+  margin: 0 40px 0 10px;
+  width: auto;
+}
+#accordion div .ma-close {
+  background: url('../img/close.png') no-repeat;
+  height: 16px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 16px;
+}
+#accordion div .ma-close:hover {
+  background-position: -0 -16px;
+  cursor: pointer;
+}

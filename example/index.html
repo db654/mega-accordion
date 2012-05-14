@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>jQuery Mega Accordion</title>
+    <style type="text/css">
+      * {margin: 0; padding: 0;}
+      body {background: url('back.jpg') no-repeat; font-family: helvetica, arial, verdana, sans-serif;}
+      h1 {background-color: #222;color: #fff;font-size: 24px;font-style: italic;font-weight: normal;padding: 4px 100px;}
+      h2 {color: #a56c3f;font: normal 32px 'Times New Roman', Georgia, serif;margin-bottom: 8px;}
+      h3, h3 a {color: #fa6c53!important; text-decoration: none;}
+      p {margin-bottom: 12px;}
+      #five div { background-color: #ededed!important; color: #000!important;}
+      #accordion div { box-shadow: 4px 4px 4px #111; -moz-box-shadow: 4px 4px 4px #111; -webkit-box-shadow: 4px 4px 4px #111;}
+      #accordion div div { box-shadow: none; -moz-box-shadow: none; -webkit-box-shadow: none;}
+    </style>      
+    <link rel="stylesheet" type="text/css" href="../css/mega-accordion.css" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.mega-accordion.0.1.js"></script>
+    <script type="text/javascript">
+    	$(document).ready(function(){
+          $("#accordion").ma({
+            tspd: 400
+          });
+    	});
+    </script>
+  </head>
+  <body>
+    <h1>jQuery Mega Accordion 0.1</h1>
+    <ul id="accordion">
+      <li>
+        <a href="#">First Item</a>
+        <div>
+          <img src="robot.png" alt="ROBOTS!" style="float: left; margin: 0 20px 0 0;" />
+          <h2>First Item</h2>
+          <p>Donec at lorem quis ligula ornare ultricies sit amet non tortor. Proin elementum ipsum sed leo varius porttitor. Phasellus sit amet augue felis, id ultrices</p>
+          <div class="section">
+            <h3><a href="#">Robots</a></h3>
+            <ul>
+              <li><a href="#">some links</a></li>
+              <li><a href="#">some links</a></li>
+              <li><a href="#">some links</a></li>
+            </ul>
+          </div>
+          <div class="section">
+            <h3><a href="#">Zombies</a></h3>
+            <ul>
+              <li><a href="#">some links</a></li>
+              <li><a href="#">some links</a></li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li>
+        <a href="#">Second Item</a>
+        <div>
+          <h2>Second Item</h2>
+          <p>vitae nisi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus dignissim dolor mi, quis dictum nisi. Phasellus vel nisl non neque tempus ultrices. Donec placerat suscipit lacus quis rhoncus. Vestibulum ante ipsum p</p>
+        </div>
+      </li>
+      <li>
+        <a href="#">Third Item</a>
+        <div>
+          <h2>Third Item</h2>
+          <div style="float: right; width: 370px;">
+            <h3>June 9, 2010</h3>
+            <p>Nam varius congue hendrerit. purus ante pellentesque ligula, id lacinia purus leo eu magna. Fusce viverra nibh sit amet eros mollis id hendrerit justo convallis. Sed non nisi vitae nunc aliquam dapibus. Etiam fringilla, eros vitae cursus pretium, lorem</p>
+            <p>Vivamus purus urna, sodales non sollicitudin vel, placerat nec sapien. Sed vulputate tincidunt ullamcorper. Donec vehicula ante a lectus eleifend in sollicitudin lectus rhoncus. Vivamus velit ante, luctus eget tempor nec, faucibus in turpis. Nunc porttitor, elit vitae convallis dapibus, enim arcu ultricies elit, sed ultrices dui est in lacus. Ut ut commodo mauris. Vestibulum laoreet lacus eget orci semper sodales. </p>
+          </div>
+<object width="320" height="240"><param name="allowfullscreen" value="true" /><param name="allowscriptaccess" value="always" /><param name="movie" value="http://vimeo.com/moogaloop.swf?clip_id=969861&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=00ADEF&amp;fullscreen=1" /><embed src="http://vimeo.com/moogaloop.swf?clip_id=969861&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=00ADEF&amp;fullscreen=1" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="400" height="300"></embed></object>
+        </div>
+      </li>
+      <li><a href="#">Item with no sub-content</a></li>
+      <li id="five">
+        <a href="#">Fifth Item</a>
+        <div>
+          <img src="robot2.png" alt="ROBOTS AGAIN!" id="roll" style="float: right; margin: 0 0 0 20px;" />
+          <h2>Fifth Item</h2>
+          <p>These content areas can be any color or size you want.</p>
+          <p>d mauris. Cras at nisl et eros accumsan auctor ac non leo. Ut a nunc sit amet est vestibulum ullamcorper. In id aliquet tellus. Aenean ullamcorper, erat et ullamcorper volutpat, purus ante pellentesque ligula, id lacinia purus leo eu magna. Fusce viverra nibh sit amet eros mollis id hendrerit justo convallis. Sed non nisi vitae nunc aliquam dapibus. Etiam fringilla, eros vitae cursus pretium, lorem 
+          </p>
+          <p>Etiam est tortor, feugiat sit amet faucibus quis, convallis ut tortor. In massa odio, interdum at suscipit at, porttitor convallis tellus. Aenean blandit risus a urna posuere ac accumsan urna pharetra. Suspendisse pulvinar, dolor nec eleifend rhoncus, libero odio aliquam nisi, quis condimentum justo massa eget turpis. Fusce purus libero, venenatis at tristique in, eleifend a nibh. Curabitur sollicitudin pharetra sagittis. Nulla facilisi. Cras vel mi arcu. </p>
+        </div>
+      </li>
+    </ul>
+  </body>
+</html>
